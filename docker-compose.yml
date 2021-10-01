@@ -1,0 +1,21 @@
+version: '3'
+services:
+    broker:
+        build: broker
+        network_mode: host
+    auldfellas:
+        build: auldfellas
+        network_mode: host
+    dodgydrivers:
+        build: dodgydrivers
+        network_mode: host
+    girlpower:
+        build: girlpower
+        network_mode: host
+    client:
+        build: client
+        network_mode: host
+        depends_on:
+            - broker
+        environment: 
+            SERVER_HOST: broker

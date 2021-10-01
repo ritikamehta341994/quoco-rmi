@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: AFQServiceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.333 s <<< FAILURE! - in AFQServiceTest
+testGenerateQuotation  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot read field "gender" because "info" is null
+	at AFQServiceTest.testGenerateQuotation(AFQServiceTest.java:46)
+
+connectionTest  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.rmi.registry.Registry.lookup(String)" because "AFQServiceTest.registry" is null
+	at AFQServiceTest.connectionTest(AFQServiceTest.java:39)
+
